@@ -1,25 +1,12 @@
-# deep-dream
+# Installation Instructions:
 
-veränderbare Variablen:
-width
-height
-content_img_paths
-style_image_paths
-content_weight
-style_weight
-tv_weight
-layer_features (content)
-feature_layers (style)
-iters = 10
+```
+git clone git@github.com:maddingl/artistic-style-transfer.git
+cd artistic-style-transfer
+virtualenv venv
+source venv/bin/activate
+pip install -r requirements.txt
+ipython kernel install --user --name=artistic-style-transfer
+```
 
-Ausprobieren:
-Standard: 1 content, 1 style - Victor
-1. 2 contents, 1 style - Victor
-2. 1 content, 2 styles - Victor
-3. tweak content_weight and style_weight - Maddin
-4. tweak tv_weight - Maddin
-5. layer_features - Maddin
-6. feature_layers - Victor
-
-gif für alle Bilder?
-
+afterwards you can start jupyter notebook or jupyter lab and use the kernel named "artistic-style-transfer"
